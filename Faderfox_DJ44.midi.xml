@@ -6,8 +6,22 @@
         <description>Controller mapping for the Faderfox DJ-44 controller. +++ v0.5 - 2017/11/10</description>
     </info>
     <controller id="Faderfox">
-        <scriptfiles/>
+        <scriptfiles>
+            <file functionprefix="" filename="lodash.mixxx.js"/>
+            <file functionprefix="" filename="midi-components-0.0.js"/>
+            <file functionprefix="DJ44" filename="Faderfox_DJ44.js"/>
+        </scriptfiles>
         <controls>
+		<control>
+                <group>[Channel1]</group>
+                <key>DJ44.LoopEncoder</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB0</status>
+                <midino>0xA1</midino>
+                <options>
+                    <Script-Binding/>
+                </options>
+            </control>
             <control>
                 <group>[Channel1]</group>
                 <key>hotcue_8_clear</key>
@@ -1174,6 +1188,16 @@
                 <midino>0x4A</midino>
                 <options>
                     <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <key>DJ44.LoopEncoder</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB0</status>
+                <midino>0xA1</midino>
+                <options>
+                    <script-binding/>
                 </options>
             </control>
             <control>
