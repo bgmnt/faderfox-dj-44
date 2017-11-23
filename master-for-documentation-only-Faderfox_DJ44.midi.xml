@@ -1,0 +1,1669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MixxxControllerPreset mixxxVersion="" schemaVersion="1">
+    <info>
+        <name>Faderfox DJ-44</name>
+        <author>bgmnt</author>
+        <description>Controller mapping for the Faderfox DJ-44 controller. +++ v0.5 - 2017/11/10</description>
+    </info>
+    <controller id="Faderfox">
+        <scriptfiles/>
+		<controls>
+		
+<!--Master Section-->
+
+			<control>
+                <group>[Master]</group>
+                <key>headGain</key>
+                <description>MIDI Learned from 321 messages.</description>
+                <status>0xB0</status>
+                <midino>0x62</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Master]</group>
+                <key>headMix</key>
+                <description>MIDI Learned from 256 messages.</description>
+                <status>0xB0</status>
+                <midino>0x60</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Master]</group>
+                <key>gain</key>
+                <description>MIDI Learned from 142 messages.</description>
+                <status>0xB0</status>
+                <midino>0x5E</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+<!--MIXER-->
+
+			<control>
+                <group>[Master]</group>
+                <key>crossfader</key>
+                <description>Crossfader</description>
+                <status>0xB0</status>
+                <midino>0x5C</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>volume</key>
+                <description>Line fader A/C</description>
+                <status>0xB0</status>
+                <midino>0x16</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[Channel2]</group>
+                <key>volume</key>
+                <description>Line fader B/D</description>
+                <status>0xB1</status>
+                <midino>0x16</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>pfl</key>
+                <description>Deck 1: Prelisten</description>
+                <status>0xB0</status>
+                <midino>0x26</midino>
+            </control>
+			
+            <control>
+                <group>[Channel2]</group>
+                <key>pfl</key>
+                <description>Deck 2: Prelisten</description>
+                <status>0xB1</status>
+                <midino>0x26</midino>
+            </control>
+			
+	<!--EQUALIZER-->
+	
+			<control>
+                <group>[Channel1]</group>
+                <key>pregain</key>
+                <description>Deck 1: Gain</description>
+                <status>0xB0</status>
+                <midino>0x0A</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[Channel2]</group>
+                <key>pregain</key>
+                <description>Deck 2: Gain</description>
+                <status>0xB1</status>
+                <midino>0x0A</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>parameter3</key>
+                <description>Deck 1: High EQ</description>
+                <status>0xB0</status>
+                <midino>0x0C</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+                <key>parameter3</key>
+                <description>Deck 2: High EQ</description>
+                <status>0xB1</status>
+                <midino>0x0C</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>button_parameter2</key>
+                <description>Deck 1: Kill Mid EQ</description>
+                <status>0xB0</status>
+                <midino>0x35</midino>
+                <options>
+                    <button/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+                <key>button_parameter2</key>
+                <description>Deck 2: Kill Mid EQ</description>
+                <status>0xB1</status>
+                <midino>0x35</midino>
+                <options>
+                    <button/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>parameter2</key>
+                <description>Deck 1: Mid EQ</description>
+                <status>0xB0</status>
+                <midino>0x0E</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+                <key>parameter2</key>
+                <description>Deck 2: Mid EQ</description>
+                <status>0xB1</status>
+                <midino>0x0E</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>button_parameter1</key>
+                <description>Deck 1: Kill Low EQ</description>
+                <status>0xB0</status>
+                <midino>0x34</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+                <key>button_parameter1</key>
+                <description>Deck 2: Kill Low EQ</description>
+                <status>0xB1</status>
+                <midino>0x34</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EqualizerRack1_[Channel1]_Effect1]</group>
+                <key>parameter1</key>
+                <description>Deck 1: Low EQ</description>
+                <status>0xB0</status>
+                <midino>0x10</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[EqualizerRack1_[Channel2]_Effect1]</group>
+                <key>parameter1</key>
+                <description>Deck 2: Low EQ</description>
+                <status>0xB1</status>
+                <midino>0x10</midino>
+                <options>
+                    <soft-takeover/>
+                </options>
+            </control>
+			
+<!--TRANSPORT-->
+
+			<control>
+                <group>[Channel1]</group>
+                <key>play</key>
+                <description>Deck 1: Play/Pause</description>
+                <status>0xB0</status>
+                <midino>0x38</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			 <control>
+                <group>[Channel2]</group>
+                <key>play</key>
+                <description>Deck 2: Play/Pause</description>
+                <status>0xB1</status>
+                <midino>0x38</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>fwd</key>
+                <description>MIDI Learned from 20 messages.</description>
+                <status>0xB0</status>
+                <midino>0x4C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[Channel2]</group>
+                <key>fwd</key>
+                <description>MIDI Learned from 16 messages.</description>
+                <status>0xB1</status>
+                <midino>0x4C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[Channel1]</group>
+                <key>back</key>
+                <description>MIDI Learned from 18 messages.</description>
+                <status>0xB0</status>
+                <midino>0x4A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[Channel2]</group>
+                <key>back</key>
+                <description>MIDI Learned from 14 messages.</description>
+                <status>0xB1</status>
+                <midino>0x4A</midino>
+                <options>
+                    <normal/>
+                </options>
+			</control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>rate_temp_up</key>
+                <description>Deck 1: Nudge - faster</description>
+                <status>0xB0</status>
+                <midino>0x50</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>rate_temp_down</key>
+                <description>Deck 1: Nudge - slower</description>
+                <status>0xB0</status>
+                <midino>0x4E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>rate_temp_up</key>
+                <description>Deck 2: Nudge - faster</description>
+                <status>0xB1</status>
+                <midino>0x50</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>rate_temp_down</key>
+                <description>Deck 2: Nudge - slower</description>
+                <status>0xB1</status>
+                <midino>0x4E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>sync_enabled</key>
+                <description>MIDI Learned from 4 messages.</description>
+                <status>0xB0</status>
+                <midino>0x30</midino>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>sync_enabled</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0xB1</status>
+                <midino>0x30</midino>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>playposition</key>
+                <description>Deck 1: Strip Search</description>
+                <status>0xB0</status>
+                <midino>0x18</midino>
+                <options>
+                    <diff/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>playposition</key>
+                <description>Deck 2: Strip Search</description>
+                <status>0xB1</status>
+                <midino>0x18</midino>
+                <options>
+                    <diff/>
+                </options>
+            </control>
+			
+		<!--Cue - Shift+Play jumps to Cue and play-->
+		
+			<control>
+                <group>[Channel1]</group>
+                <key>cue_gotoandplay</key>
+                <description>Deck 1: Cue</description>
+                <status>0xB0</status>
+                <midino>0x39</midino>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>cue_gotoandplay</key>
+                <description>Deck 2: Cue</description>
+                <status>0xB1</status>
+                <midino>0x39</midino>
+            </control>
+			
+	<!--Rate/Pitch-->
+	
+			<control>
+                <group>[Channel1]</group>
+                <key>rate</key>
+                <status>0xB0</status>
+                <midino>0x1C</midino>
+                <options>
+                    <diff/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>rate</key>
+                <status>0xB1</status>
+                <midino>0x1C</midino>
+                <options>
+                    <diff/>
+                </options>
+            </control>
+			
+		<!--Rate/pitch reset-->
+		
+			<control>
+                <group>[Channel1]</group>
+                <key>rate_set_default</key>
+                <description>MIDI Learned from 4 messages.</description>
+                <status>0xB0</status>
+                <midino>0x56</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>rate_set_default</key>
+                <description>MIDI Learned from 4 messages.</description>
+                <status>0xB1</status>
+                <midino>0x56</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+		<!--Key reset, independent from rate via Shift-->
+		
+			<control>
+                <group>[Channel1]</group>
+                <key>reset_key</key>
+                <description>MIDI Learned from 35 messages.</description>
+                <status>0xB0</status>
+                <midino>0x57</midino>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>reset_key</key>
+                <description>MIDI Learned from 35 messages.</description>
+                <status>0xB1</status>
+                <midino>0x57</midino>
+            </control>
+
+<!--HOTCUES-->
+
+	<!--Hotcue 1-->
+	
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_1_activate</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0xB0</status>
+                <midino>0x3A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_1_clear</key>
+                <description>MIDI Learned from 6 messages.</description>
+                <status>0xB0</status>
+                <midino>0x3B</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[Channel2]</group>
+                <key>hotcue_1_activate</key>
+                <description>MIDI Learned from 10 messages.</description>
+                <status>0xB1</status>
+                <midino>0x3A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>hotcue_1_clear</key>
+                <description>MIDI Learned from 6 messages.</description>
+                <status>0xB1</status>
+                <midino>0x3B</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+        <!--Hotcue 2-->
+		
+		     <control>
+                <group>[Channel1]</group>
+                <key>hotcue_2_activate</key>
+                <description>MIDI Learned from 4 messages.</description>
+                <status>0xB0</status>
+                <midino>0x3C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_2_clear</key>
+                <description>MIDI Learned from 6 messages.</description>
+                <status>0xB0</status>
+                <midino>0x3D</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[Channel2]</group>
+                <key>hotcue_2_activate</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB1</status>
+                <midino>0x3C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>hotcue_2_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB1</status>
+                <midino>0x3D</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+		<!--Hotcue 3-->
+		
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_3_activate</key>
+                <description>MIDI Learned from 6 messages.</description>
+                <status>0xB0</status>
+                <midino>0x3E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_3_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB0</status>
+                <midino>0x3F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[Channel2]</group>
+                <key>hotcue_3_activate</key>
+                <description>MIDI Learned from 14 messages.</description>
+                <status>0xB1</status>
+                <midino>0x3E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>hotcue_3_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB1</status>
+                <midino>0x3F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+		<!--Hotcue 4-->
+		
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_4_activate</key>
+                <description>MIDI Learned from 8 messages.</description>
+                <status>0xB0</status>
+                <midino>0x40</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_4_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB0</status>
+                <midino>0x41</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[Channel2]</group>
+                <key>hotcue_4_activate</key>
+                <description>MIDI Learned from 16 messages.</description>
+                <status>0xB1</status>
+                <midino>0x40</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>hotcue_4_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB1</status>
+                <midino>0x41</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+		<!--Hotcue 5-->
+		
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_5_activate</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB0</status>
+                <midino>0x42</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_5_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB0</status>
+                <midino>0x43</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>hotcue_5_activate</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB1</status>
+                <midino>0x42</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>hotcue_5_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB1</status>
+                <midino>0x43</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+		<!--Hotcue 6-->
+		
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_6_activate</key>
+                <description>MIDI Learned from 14 messages.</description>
+                <status>0xB0</status>
+                <midino>0x44</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_6_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB0</status>
+                <midino>0x45</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>hotcue_6_activate</key>
+                <description>MIDI Learned from 14 messages.</description>
+                <status>0xB1</status>
+                <midino>0x44</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>hotcue_5_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB1</status>
+                <midino>0x45</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+		<!--Hotcue 7-->
+		
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_7_activate</key>
+                <description>MIDI Learned from 18 messages.</description>
+                <status>0xB0</status>
+                <midino>0x46</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_7_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB0</status>
+                <midino>0x47</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>hotcue_7_activate</key>
+                <description>MIDI Learned from 18 messages.</description>
+                <status>0xB1</status>
+                <midino>0x46</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>hotcue_7_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB1</status>
+                <midino>0x47</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+        <!--Hotcue 8-->
+		
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_8_activate</key>
+                <description>MIDI Learned from 20 messages.</description>
+                <status>0xB0</status>
+                <midino>0x48</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>hotcue_8_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB0</status>
+                <midino>0x49</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>hotcue_8_activate</key>
+                <description>MIDI Learned from 20 messages.</description>
+                <status>0xB1</status>
+                <midino>0x48</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>hotcue_8_clear</key>
+                <description>MIDI Learned from 12 messages.</description>
+                <status>0xB1</status>
+                <midino>0x49</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+
+<!--LIBRARY-->
+
+			            <control>
+                <group>[Playlist]</group>
+                <key>SelectTrackKnob</key>
+                <description>Browse tracklist</description>
+                <status>0xB0</status>
+                <midino>0x66</midino>
+                <options>
+                    <selectknob/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Playlist]</group>
+                <key>LoadSelectedIntoFirstStopped</key>
+                <description>Track browse knob - Load track in first stopped deck</description>
+                <status>0xB0</status>
+                <midino>0x72</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+						
+			<control>
+                <group>[Channel1]</group>
+                <key>LoadSelectedTrack</key>
+                <description>Load track in deck A</description>
+                <status>0xB0</status>
+                <midino>0x6C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>LoadSelectedTrack</key>
+                <description>Load track in deck B</description>
+                <status>0xB1</status>
+                <midino>0x6E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Playlist]</group>
+                <key>SelectPlaylist</key>
+                <description>Browse folders</description>
+                <status>0xB0</status>
+                <midino>0x64</midino>
+                <options>
+                    <selectknob/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Playlist]</group>
+                <key>ToggleSelectedSidebarItem</key>
+                <description>Open entry in folder list</description>
+                <status>0xB0</status>
+                <midino>0x70</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[PreviewDeck1]</group>
+                <key>LoadSelectedTrackAndPlay</key>
+                <description>Load selected track in the preview deck and play</description>
+                <status>0xB0</status>
+                <midino>0x68</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Master]</group>
+                <key>maximize_library</key>
+                <description>Toggle maximizing the library</description>
+                <status>0xB0</status>
+                <midino>0x6A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+           	
+			
+<!--LOOP CONTROL-->
+
+			<control>
+                <group>[Channel1]</group>
+                <key>loop_in</key>
+                <description>Deck 1: Loop in</description>
+                <status>0xB0</status>
+                <midino>0x2C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>loop_out</key>
+                <description>Deck 1: Loop out</description>
+                <status>0xB0</status>
+                <midino>0x2E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>reloop_exit</key>
+                <description>Deck 1: Switch Loop on/off</description>
+                <status>0xB0</status>
+                <midino>0x54</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>loop_in</key>
+                <description>Deck 1: Loop in</description>
+                <status>0xB1</status>
+                <midino>0x2C</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>loop_out</key>
+                <description>Deck 1: Loop out</description>
+                <status>0xB1</status>
+                <midino>0x2E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>reloop_exit</key>
+                <description>Deck 1: Switch Loop on/off</description>
+                <status>0xB1</status>
+                <midino>0x54</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+<!--Changing Loop length with Shift + in/out buttons, until the encoder works-->
+
+			<control>
+                <group>[Channel1]</group>
+                <key>loop_halve</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0xB0</status>
+                <midino>0x2D</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel1]</group>
+                <key>loop_double</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0xB0</status>
+                <midino>0x2F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>loop_halve</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0xB1</status>
+                <midino>0x2D</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			<control>
+                <group>[Channel2]</group>
+                <key>loop_double</key>
+                <description>MIDI Learned from 2 messages.</description>
+                <status>0xB1</status>
+                <midino>0x2F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>loop_move_4_forward</key>
+                <description>Deck 1: Loop move forward 4 beats</description>
+                <status>0xB0</status>
+                <midino>0x51</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel1]</group>
+                <key>loop_move_4_backward</key>
+                <description>Deck 1: Loop move backward 4 beats</description>
+                <status>0xB0</status>
+                <midino>0x4F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>loop_move_4_forward</key>
+                <description>Deck 2: Loop move forward 4 beats</description>
+                <status>0xB1</status>
+                <midino>0x51</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[Channel2]</group>
+                <key>loop_move_4_backward</key>
+                <description>Deck 2: Loop move backward 4 beats</description>
+                <status>0xB1</status>
+                <midino>0x4F</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			
+<!--EFFECTS-->
+
+	<!--FILTERS-->
+	
+			<control>
+                <group>[QuickEffectRack1_[Channel1]]</group>
+                <key>super1</key>
+                <description>Deck 1: Quick filter</description>
+                <status>0xB0</status>
+                <midino>0x14</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[QuickEffectRack1_[Channel2]]</group>
+                <key>super1</key>
+                <description>Deck 2: Quick filter</description>
+                <status>0xB1</status>
+                <midino>0x14</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+<!--EFFECTS - for Mixxx effect rack slot 1 and two only. Parameter via mouse-->
+                              
+	<!--Buttons-->
+			
+            <control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>enabled</key>
+                <description>On/off unit 1</description>
+                <status>0xB0</status>
+                <midino>0x1E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EffectRack1_EffectUnit2]</group>
+                <key>enabled</key>
+                <description>On/off unit 2</description>
+                <status>0xB1</status>
+                <midino>0x1E</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>next_chain</key>
+                <description>Unit 1: Browse effects to right</description>
+                <status>0xB0</status>
+                <midino>0x20</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EffectRack1_EffectUnit2]</group>
+                <key>next_chain</key>
+                <description>Unit 2: Browser Effects to right</description>
+                <status>0xB1</status>
+                <midino>0x20</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>group_[Master]_enable</key>
+                <description>Unit 1: FX assing master</description>
+                <status>0xB0</status>
+                <midino>0x22</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit2]</group>
+                <key>group_[Master]_enable</key>
+                <description>Unit 2: FX assing master</description>
+                <status>0xB1</status>
+                <midino>0x22</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>group_[Headphone]_enable</key>
+                <description>Unit 1: FX assign Headphone</description>
+                <status>0xB0</status>
+                <midino>0x24</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[EffectRack1_EffectUnit2]</group>
+                <key>group_[Headphone]_enable</key>
+                <description>Unit 2: FX assign Headphone</description>
+                <status>0xB1</status>
+                <midino>0x24</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>group_[Channel1]_enable</key>
+                <description>Unit 1: FX assing channel 1</description>
+                <status>0xB0</status>
+                <midino>0x28</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            			
+            <control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>group_[Channel2]_enable</key>
+                <description>Unit 1: FX assign Channel 2</description>
+                <status>0xB0</status>
+                <midino>0x2A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EffectRack1_EffectUnit2]</group>
+                <key>group_[Channel1]_enable</key>
+                <description>Unit 2: FX assing channel 1</description>
+                <status>0xB1</status>
+                <midino>0x28</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[EffectRack1_EffectUnit2]</group>
+                <key>group_[Channel2]_enable</key>
+                <description>Unit 2: FX assign Channel 2</description>
+                <status>0xB1</status>
+                <midino>0x2A</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			      
+	   <!--Knobs-->   
+	   
+		<!--Dry/Wet or Mix -->	
+		
+            <control>
+                <group>[EffectRack1_EffectUnit1]</group>
+                <key>mix</key>
+                <description>Dry/Wet unit 1</description>
+                <status>0xB0</status>
+                <midino>0x02</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            
+			<control>
+                <group>[EffectRack1_EffectUnit2]</group>
+                <key>mix</key>
+                <description>Dry/wet unit 2</description>
+                <status>0xB1</status>
+                <midino>0x02</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            
+			<control>
+                <group>[EffectRack1_EffectUnit1_Effect1]</group>
+                <key>parameter1</key>
+                <description>Unit 1: Parameter 1</description>
+                <status>0xB0</status>
+                <midino>0x04</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit2_Effect1]</group>
+                <key>parameter1</key>
+                <description>Unit 2: Parameter 1</description>
+                <status>0xB1</status>
+                <midino>0x04</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EffectRack1_EffectUnit1_Effect1]</group>
+                <key>parameter2</key>
+                <description>Unit 1: Parameter 2</description>
+                <status>0xB0</status>
+                <midino>0x06</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+            <control>
+                <group>[EffectRack1_EffectUnit2_Effect1]</group>
+                <key>parameter2</key>
+                <description>Unit 2: Parameter 2</description>
+                <status>0xB1</status>
+                <midino>0x06</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+			<control>
+                <group>[EffectRack1_EffectUnit1_Effect1]</group>
+                <key>parameter3</key>
+                <description>Unit 1: Parameter 3</description>
+                <status>0xB0</status>
+                <midino>0x08</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+            <control>
+                <group>[EffectRack1_EffectUnit2_Effect1]</group>
+                <key>parameter3</key>
+                <description>Unit 2: Parameter 3</description>
+                <status>0xB1</status>
+                <midino>0x08</midino>
+                <options>
+                    <normal/>
+                </options>
+            </control>
+			
+<!--LED-->
+
+	<!--VU Meter-->
+	
+		<outputs>
+            <output>
+                <group>[Channel1]</group>
+                <key>VuMeter</key>
+                <status>0xB0</status>
+                <midino>0x22</midino>
+             </output>
+			
+			 <output>
+                <group>[Channel2]</group>
+                <key>VuMeter</key>
+                <status>0xB1</status>
+                <midino>0x22</midino>
+               </output>
+
+	<!--Transport-->
+	
+			<!--continious play LED is 0x38, blinking LED is 0x59-->
+
+	
+            <output>
+                <group>[Channel1]</group>
+                <key>play_indicator</key>
+                <status>0xB0</status>
+                <midino>0x59</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel2]</group>
+                <key>play_indicator</key>
+                <status>0xB1</status>
+                <midino>0x59</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>			
+				
+			<output>
+                <group>[Channel1]</group>
+                <key>sync_enabled</key>
+                <description>Deck 1: Sync enabled LED</description>
+                <status>0xB0</status>
+                <midino>0x30</midino>
+				<on>0x00</on>
+				<off>0x7F</off>
+            </output>
+			
+			<output>
+                <group>[Channel2]</group>
+                <key>sync_enabled</key>
+                <description>Deck 2: Sync enabled LED</description>
+                <status>0xB1</status>
+                <midino>0x30</midino>
+				<on>0x00</on>
+				<off>0x7F</off>
+            </output>
+			
+			<output>
+                <group>[Channel1]</group>
+                <key>pfl</key>
+                <description>Deck 1: Prelisten LED</description>
+                <status>0xB0</status>
+                <midino>0x26</midino>
+				<on>0x00</on>
+				<off>0x7F</off>
+            </output>
+			
+            <output>
+                <group>[Channel2]</group>
+                <key>pfl</key>
+                <description>Deck 2: Prelisten LED</description>
+                <status>0xB1</status>
+                <midino>0x26</midino>
+				<on>0x00</on>
+				<off>0x7F</off>
+            </output>
+			
+	<!--Hotcues-->
+	
+			<output>
+                <group>[Channel1]</group>
+                <key>hotcue_1_enabled</key>
+                <status>0xB0</status>
+                <midino>0x3A</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel1]</group>
+                <key>hotcue_2_enabled</key>
+                <status>0xB0</status>
+                <midino>0x3C</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>			
+                     
+            <output>
+                <group>[Channel1]</group>
+                <key>hotcue_3_enabled</key>
+                <status>0xB0</status>
+                <midino>0x3E</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel1]</group>
+                <key>hotcue_4_enabled</key>
+                <status>0xB0</status>
+                <midino>0x40</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel1]</group>
+                <key>hotcue_5_enabled</key>
+                <status>0xB0</status>
+                <midino>0x42</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel1]</group>
+                <key>hotcue_6_enabled</key>
+                <status>0xB0</status>
+                <midino>0x44</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>			
+                     
+            <output>
+                <group>[Channel1]</group>
+                <key>hotcue_7_enabled</key>
+                <status>0xB0</status>
+                <midino>0x46</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel1]</group>
+                <key>hotcue_8_enabled</key>
+                <status>0xB0</status>
+                <midino>0x48</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel2]</group>
+                <key>hotcue_1_enabled</key>
+                <status>0xB1</status>
+                <midino>0x3A</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel2]</group>
+                <key>hotcue_2_enabled</key>
+                <status>0xB1</status>
+                <midino>0x3C</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>			
+                     
+            <output>
+                <group>[Channel2]</group>
+                <key>hotcue_3_enabled</key>
+                <status>0xB1</status>
+                <midino>0x3E</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel2]</group>
+                <key>hotcue_4_enabled</key>
+                <status>0xB1</status>
+                <midino>0x40</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel2]</group>
+                <key>hotcue_5_enabled</key>
+                <status>0xB1</status>
+                <midino>0x42</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel2]</group>
+                <key>hotcue_6_enabled</key>
+                <status>0xB1</status>
+                <midino>0x44</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>			
+                     
+            <output>
+                <group>[Channel2]</group>
+                <key>hotcue_7_enabled</key>
+                <status>0xB1</status>
+                <midino>0x46</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel2]</group>
+                <key>hotcue_8_enabled</key>
+                <status>0xB1</status>
+                <midino>0x48</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+	
+	<!--EQ and filters-->
+	
+			<output>
+                <group>[Channel1]</group>
+                <key>[EqualizerRack1_[Channel1]_Effect1],button_parameter1</key>
+                <description>Deck 1: EQ Low Kill</description>
+                <status>0xB0</status>
+                <midino>0x34</midino>
+				<on>0x00</on>
+				<off>0x7F</off>
+            </output>
+			
+			<output>
+                <group>[Channel1]</group>
+                <key>[EqualizerRack1_[Channel2]_Effect1],button_parameter1</key>
+                <description>Deck 2: EQ Low Kill</description>
+                <status>0xB1</status>
+                <midino>0x34</midino>
+				<on>0x00</on>
+				<off>0x7F</off>
+            </output>
+			
+			<output>
+                <group>[Channel1]</group>
+                <key>[EqualizerRack1_[Channel1]_Effect1],button_parameter1</key>
+                <description>Deck 1: EQ Mid Kill</description>
+                <status>0xB0</status>
+                <midino>0x35</midino>
+				<on>0x00</on>
+				<off>0x7F</off>
+            </output>
+			
+			<output>
+                <group>[Channel1]</group>
+                <key>[EqualizerRack1_[Channel2]_Effect1],button_parameter1</key>
+                <description>Deck 2: EQ Mid Kill</description>
+                <status>0xB1</status>
+                <midino>0x35</midino>
+				<on>0x00</on>
+				<off>0x7F</off>
+            </output>
+			
+			<output>
+                <group>[QuickEffectRack1_[Channel1],enabled</group>
+                <key>filter</key>
+				<description>Deck 1: Quick Filter on/off</description>
+                <status>0xB0</status>
+                <midino>0x32</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[QuickEffectRack1_[Channel2],enabled</group>
+                <key>filter</key>
+				<description>Deck 2: Quick Filter on/off</description>
+                <status>0xB1</status>
+                <midino>0x32</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			
+	<!--Looping-->
+		<!--continious LED is 0x54, blinking LED is 0x5A-->
+			<output>
+                <group>[Channel1]</group>
+                <key>loop_enabled</key>
+                <status>0xB0</status>
+                <midino>0x5A</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+			
+			<output>
+                <group>[Channel2]</group>
+                <key>loop_enabled</key>
+                <status>0xB1</status>
+                <midino>0x5A</midino>
+                <on>0x00</on>
+                <off>0x7F</off>
+                <maximum>0</maximum>
+            </output>
+									
+			</outputs>		
+		</controls>
+	</controller>	
+</MixxxControllerPreset>
