@@ -8,4 +8,4 @@ basic mapping is done via a xml file.
 
 exception from layout: pan knobs are faders to (rotary style) at the moment. this will change in the next release, since it is my individual style and should not be in the standard mapping.
 
-the referenced avascript file is not working so far, contains the basic parameters only. it is needed to get the vu meters and the loop encoders to work
+the referenced avascript file is not working so far, contains the basic parameters only. it is needed to get the vu meters and the loop encoders to work.
