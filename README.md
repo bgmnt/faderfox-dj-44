@@ -2,7 +2,8 @@
 
 this is about mapping a midi dj controller for the use in the dj software mixxx 2.1 and upwards.
 
-mapping is 90 percent complete - loop encoders and vu meters are not working. javascript is needed here - and i need help.
+mapping is 90 percent complete - loop encoders and vu meters are not working, while simple setting a loop and shorting it works.
+javascript is needed here - and i need help.
 
 basic mapping is done via a xml file.
 
